@@ -2,27 +2,12 @@ import streamlit as st
 import pickle
 
 # Load the trained model from the pickle file
-model = pickle.load(open('trained_model.pkl', 'rb'))
+model = pickle.load(open('water_potability.pkl', 'rb'))
 
 def predict_potability(ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity):
-    # Create a dictionary with the input values
-    input_data = {
-        'ph': ph,
-        'Hardness': hardness,
-        'Solids': solids,
-        'Chloramines': chloramines,
-        'Sulfate': sulfate,
-        'Conductivity': conductivity,
-        'Organic_carbon': organic_carbon,
-        'Trihalomethanes': trihalomethanes,
-        'Turbidity': turbidity
-    }
-
-    # Convert the input data into a dataframe
-    input_df = pd.DataFrame([input_data])
-
     # Make predictions using the trained model
-    predictions = model.predict(input_df)
+    attributes = [ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity]
+    predictions = model.predict([attributes])
 
     return predictions[0]
 
@@ -52,4 +37,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
