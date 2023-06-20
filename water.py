@@ -49,8 +49,14 @@ def main():
             st.write("The water is Not Potable.")
             st.markdown("<p style='color: #333; font-weight: bold;'>The water is Not Potable.</p>", unsafe_allow_html=True)
             st.write("Non-potable water refers to water that does not meet the necessary quality standards for safe consumption. It may contain contaminants or impurities that can pose health risks if consumed. It is important to take the following safety precautions:")
+            st.markdown("<p style='color: #333; font-weight: bold;'>Non-potable water refers to water that does not meet the necessary quality standards for safe consumption. It may contain contaminants or impurities that can pose health risks if consumed. It is important to take the following safety precautions.</p>", unsafe_allow_html=True)
+
             st.write("- Avoid drinking the water directly from the source.")
+            st.markdown("<p style='color: #333; font-weight: bold;'>Avoid drinking the water directly from the source.</p>", unsafe_allow_html=True)
+
             st.write("- Do not use non-potable water for cooking, preparing food, or making ice cubes.")
+            st.markdown("<p style='color: #333; font-weight: bold;'>Do not use non-potable water for cooking, preparing food, or making ice cubes.</p>", unsafe_allow_html=True)
+
             st.write("- Use alternative sources of water for drinking, such as bottled water or water from a reliable and certified water treatment system.")
             st.write("- If using non-potable water for other purposes like bathing or washing dishes, take care to avoid ingesting the water or letting it come into contact with open wounds.")
             st.write("- Contact your local water authorities or experts for guidance on improving water quality or finding alternative sources of potable water.")
