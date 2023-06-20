@@ -45,7 +45,7 @@ def main():
         result = predict_potability(ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity)
         if result == 1:
             st.markdown("<p style='color: #333; font-weight: bold;'>The water is Potable.</p>", unsafe_allow_html=True)
-            st.markdown("<p style='color: #333;'>This prediction is based on the model's estimation and does not guarantee 100% accuracy. It is recommended to consult with water authorities or experts for further assessment and appropriate action.</p>", unsafe_allow_html=True)
+            st.markdown("<p style='color: #333; font-weight: bold;'>This is a prediction model that provides an estimation of water potability based on the input attributes. The predictions are not guaranteed to be 100% accurate and should be used for informational purposes only. It is recommended to consult with water experts, follow local guidelines, and conduct appropriate water testing for accurate assessments of water quality and potability.</p>", unsafe_allow_html=True)
         else:
             
             st.markdown("<p style='color: #333; font-weight: bold;'>The water is Not Potable.</p>", unsafe_allow_html=True)
