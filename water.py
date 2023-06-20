@@ -61,7 +61,9 @@ def main():
 
             
         st.markdown("<h3 style='color: #333; font-weight: bold;'>Disclaimer:</h3>", unsafe_allow_html=True)
-        st.markdown("<p>This is a prediction model that provides an estimation of water potability based on the input attributes. The predictions are not guaranteed to be 100% accurate and should be used for informational purposes only. It is recommended to consult with water experts, follow local guidelines, and conduct appropriate water testing for accurate assessments of water quality and potability.</p>", unsafe_allow_html=True)
+        st.markdown("<h3 style='color: #333; font-weight: bold;'>This is a prediction model that provides an estimation of water potability based on the input attributes. The predictions are not guaranteed to be 100% accurate and should be used for informational purposes only. It is recommended to consult with water experts, follow local guidelines, and conduct appropriate water testing for accurate assessments of water quality and potability.</h3>", unsafe_allow_html=True)
+
+        
 
             
 
