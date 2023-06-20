@@ -16,7 +16,7 @@ def main():
         """
         <style>
         .reportview-container {
-            background: url('https://st4.depositphotos.com/10953878/38390/i/600/depositphotos_383903356-stock-photo-lab-test-tubes-modern-chemical.jpg') no-repeat center center fixed;
+            background: url('https://png.pngtree.com/background/20230306/original/pngtree-lab-assistant-testing-water-quality-vector-picture-image_2096635.jpg') no-repeat center center fixed;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
