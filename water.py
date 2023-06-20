@@ -16,7 +16,7 @@ def main():
         """
         <style>
         .reportview-container {
-            background: url('https://png.pngtree.com/background/20230306/original/pngtree-lab-assistant-testing-water-quality-vector-picture-image_2096635.jpg') no-repeat center center fixed;
+            background: url('https://previews.123rf.com/images/antonmedvedev/antonmedvedev2006/antonmedvedev200601242/150104737-lab-proofs-in-modern-scientific-study-facility-potable-water-quality-test-for-bacteria-design.jpg') no-repeat center center fixed;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
