@@ -26,8 +26,8 @@ def main():
         unsafe_allow_html=True
     )
     # Set the title and description of the app
-    st.title("Water Potability Predictor")
-    st.write("Enter the values for various water quality attributes to predict water potability.")
+st.markdown("<h1 style='color: #333; font-weight: bold;'>Water Potability Predictor</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #333; font-weight: bold;'>Enter the values for various water quality attributes to predict water potability.</p>", unsafe_allow_html=True)
 
     # Create input fields for the water quality attributes
     ph = st.number_input("pH", min_value=0.0, max_value=14.0, step=0.1)
