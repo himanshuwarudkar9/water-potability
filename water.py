@@ -12,6 +12,17 @@ def predict_potability(ph, hardness, solids, chloramines, sulfate, conductivity,
     return predictions[0]
 
 def main():
+    st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background: url('https://st4.depositphotos.com/10953878/38390/i/600/depositphotos_383903356-stock-photo-lab-test-tubes-modern-chemical.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     # Set the title and description of the app
     st.title("Water Potability Predictor")
     st.write("Enter the values for various water quality attributes to predict water potability.")
