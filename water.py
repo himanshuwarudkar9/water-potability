@@ -44,9 +44,18 @@ def main():
     if st.button("Predict"):
         result = predict_potability(ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity)
         if result == 1:
-            st.write("The water is Potable.")
+            st.write("The water is Potable,It means that it is safe for consumption and meets the necessary quality standards")
         else:
             st.write("The water is Not Potable.")
+            st.markdown("<p style='color: #333; font-weight: bold;'>The water is Not Potable.</p>", unsafe_allow_html=True)
+            st.write("Non-potable water refers to water that does not meet the necessary quality standards for safe consumption. It may contain contaminants or impurities that can pose health risks if consumed. It is important to take the following safety precautions:")
+            st.write("- Avoid drinking the water directly from the source.")
+            st.write("- Do not use non-potable water for cooking, preparing food, or making ice cubes.")
+            st.write("- Use alternative sources of water for drinking, such as bottled water or water from a reliable and certified water treatment system.")
+            st.write("- If using non-potable water for other purposes like bathing or washing dishes, take care to avoid ingesting the water or letting it come into contact with open wounds.")
+            st.write("- Contact your local water authorities or experts for guidance on improving water quality or finding alternative sources of potable water.")
+            st.write("It is important to prioritize your health and well-being by ensuring access to clean and potable water. Taking necessary precautions and seeking expert advice will help mitigate potential health risks associated with non-potable water.")
+
 
 if __name__ == "__main__":
     main()
