@@ -44,7 +44,8 @@ def main():
     if st.button("Predict"):
         result = predict_potability(ph, hardness, solids, chloramines, sulfate, conductivity, organic_carbon, trihalomethanes, turbidity)
         if result == 1:
-            st.write("The water is Potable,It means that it is safe for consumption and meets the necessary quality standards")
+            st.markdown("<p style='color: #333; font-weight: bold;'>The water is Potable.</p>", unsafe_allow_html=True)
+            st.markdown("<p style='color: #333;'>This prediction is based on the model's estimation and does not guarantee 100% accuracy. It is recommended to consult with water authorities or experts for further assessment and appropriate action.</p>", unsafe_allow_html=True)
         else:
             
             st.markdown("<p style='color: #333; font-weight: bold;'>The water is Not Potable.</p>", unsafe_allow_html=True)
